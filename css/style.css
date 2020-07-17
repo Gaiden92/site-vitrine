@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+body{font-family: 'Lato', sans-serif;}
+
+/********* HEADER ************/
+
+header{background: url(../img/bureau_sami_fouchal_developpeur.jpg) no-repeat center;background-size: cover;height: 100vh;/* viewport height */}
+header:before{content: '';position: absolute;height: 100%;width: 100%;background-color: #2c3e5026;}
+
+.phrase-presentation{font-family: 'Times New Roman', Times, serif;position: relative;top: 52%;color: #ffffff;margin: 0 25%;
+padding: 40px;background-color: #000000c9;border-radius: 30px;}
+
+
+nav{position: fixed;top: 0;background-color: #F9F8F8;padding: 20px 0;text-transform: uppercase;font-size: 20px;}
+.fixed {position: fixed;top: 0;width: 100%;background-color: white;border-bottom: 1px solid rgba(0, 0, 0, 0.294);z-index: 999;transform: all .2s ease-in-out;}
+nav a{color: #A1A6B4;}
+nav ul{display: flex;justify-content: flex-end;flex-wrap: wrap;}
+nav ul li {margin: auto 10px;}
+
+nav ul li a{padding: 10px;}
+
+nav ul li a:hover{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.home{
+    float: left;
+    padding-left: 20px;
+    font-size: 30px;
+    color: rgb(207, 154, 30);
+    transition: transform .2s linear;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home span{
+    color: rgb(207, 154, 30);
+    font-size: 35px;
+}
+
+.home:hover{
+    color: black;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+
+
+.home:first-letter{
+    color: black;
+    font-size: 35px;
+}
+
+
+
+header img{
+    display: block;
+    margin: 50px auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+.ligne{
+    display: block;
+    height: 2px;
+    background-color: #000000;
+    width: 20%;
+    margin: 20px auto;
+}
+
+header h2{
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+/************* MAIN ************/
+
+/************ SECTION 1 ********/
+main section{
+    padding: 90px 0;
+}
+
+main section h2, .preFooter h2{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#une h2, #trois h2{
+    color: rgb(207, 154, 30);
+}
+
+#une .ligne, #trois .ligne {
+    background-color:  #2c3e50;
+}
+
+#une div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#une div a{
+    width: 500px;
+}
+
+#une div img{
+    width: 100%;
+    height: 90%;
+    margin: 20px auto;
+    transition: transform .2s linear;
+    border: 1px solid black;
+}
+
+#une div img:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+/*********** SECTION 2 **********/
+
+#deux{ background-color: #F9F8F8;color: black;}
+#deux div.formation{display: flex;flex-wrap: wrap;justify-content: space-around;margin-top: 50px;}
+#deux div article{width: 600px;padding: 10px;margin: 10px 0;font-size: 20px;}
+#deux div article:first-child{width: 100%;}
+#deux div article:first-child div.quijesuis{grid-gap: 50px;display: grid;grid-template-columns: 1fr 50%;}
+#deux div article:first-child div.quijesuis div.photo-profile{text-align: center;}
+#deux div article:first-child div.quijesuis div.photo-profile figcaption{font-style: italic;}
+#deux div article:first-child div.quijesuis div.texte-presentation{padding: 20px;}
+
+#deux div article span{
+    font-style: italic;
+    margin-right: 100px;
+}
+
+.blockLi{display: flex;}
+
+
+#deux h3{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(207, 154, 30);
+}
+
+#deux a{
+    color: #F9F8F8;
+    display: block;
+    margin: 30px auto;
+    border: 1px solid #F9F8F8;
+    padding: 10px 10px;
+    width: 10%;
+    text-align: center;
+}
+
+#deux a:hover {
+    background-color: #F9F8F8;
+    color: #2c3e50;
+    border-color: #2c3e50;
+}
+
+#deux a i{
+    margin: 10px 5px;
+}
+
+
+
+/************* SECTION 3 **************/
+
+#trois form{
+    color: #2c3e50;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#trois form aside{
+    width: 50%;
+    margin: auto;
+}
+
+#trois form aside label{
+    display: block;
+    text-align: left;
+    font-size: 20px;
+}
+
+#trois form input, #trois form textarea{
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 1px dashed #2c3e50;
+}
+
+#trois form input{
+    height: 30px;
+    
+}
+
+#trois form textarea{
+    height: 100px;
+}
+
+#trois form button{
+    background-color: #2c3e50;
+    color: #F9F8F8;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 20px;
+    width: 125px;
+    transition: transform .2s linear;
+    
+}
+
+#trois form button:hover{
+    background-color: #128f76;transform: scale(1.2);
+}
+
+
+
+
+/****************************PREFOOTER**************************/
+.preFooter {
+    padding: 20px;
+    color: #F9F8F8;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;}
+
+
+.preFooter .ligne{
+    background-color:#F9F8F8;
+    width: 50%;
+}
+
+.ligne2{
+    display: block;
+    height: 2px;
+    background-color: #F9F8F8;
+    margin: 20px auto;
+    width: 98%;
+}
+
+/******************************BLOC RESEAU*********************/
+.reseau{
+    font-size: 1.5em;
+}
+
+.reseau a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(207, 154, 30);
+    
+}
+
+.reseau i{
+    color: grey;
+}
+.reseau i:hover{
+    color: #F9F8F8;
+
+}
+/****************************BLOC COORDONNEES****************************/
+
+#quatre span{
+    font-size: 1.5em;
+    color: rgb(207, 154, 30);
+}
+
+#quatre i{
+    font-size: 1.5em;
+}
+
+#quatre p{
+    font-size: 1.2em;
+}
+
+
+
+/********************************FOOTER**********************************/
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F9F8F8;
+    color: black;
+    text-align: center;
+  }
+
+
+/********ANIMATIONS*****************
+
+/* PULSATING CARET */
+[data-typer]:after {
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    width:1px;
+    height:1em;
+    background: rgb(255, 255, 255);
+            animation: caretPulsate 1s linear infinite; 
+    -webkit-animation: caretPulsate 1s linear infinite; 
+  }
+  @keyframes caretPulsate {
+    0%   {opacity:1;}
+    50%  {opacity:1;}
+    60%  {opacity:0;}
+    100% {opacity:0;}
+  }
+  @-webkit-keyframes caretPulsate {
+    0%   {opacity:1;}
+    50%  {opacity:1;}
+    60%  {opacity:0;}
+    100% {opacity:0;}
+  }
+
+/*Loader*/
+
+#splash{position: fixed;top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background: linear-gradient(45deg, rgb(34, 36, 40), rgb(68, 72, 86));
+color: rgb(255, 255, 255);
+z-index: 4000;
+}
+.text-light{margin: 20% auto;}
+@keyframes r {
+    0% { transform: rotate(0deg); } 100% { transform: rotate(45deg); }
+  }
+#splash { transition: all .3s linear }
+
+svg.gear { animation: r .5s infinite linear; }
+
+/*fléches*/
+.fleches{display: none;}
+a.slideshow_arr {float:left;width:91px;height:72px;position:absolute;z-index:500;left:50%;margin-left:-45px;bottom:0;cursor: pointer;}
+.arrow {opacity: 0;position: absolute;left: 50%;bottom: 0;transform-origin: 50% 50%;transform: translate3d(-50%, -50%, 0);z-index:500;background:transparent url(../img/arrow.png) no-repeat center bottom;float:left;width:91px;height:48px}
+.arrow-first {-o-animation: arrow-movement 2s ease-in-out infinite;-webkit-animation: arrow-movement 2s ease-in-out infinite;-moz-animation: arrow-movement 2s ease-in-out infinite;animation: arrow-movement 2s ease-in-out infinite}
+.arrow-second {-o-animation: arrow-movement 2s 1s ease-in-out infinite;-webkit-animation: arrow-movement 2s 1s ease-in-out infinite;-moz-animation: arrow-movement 2s 1s ease-in-out infinite;animation: arrow-movement 2s 1s ease-in-out infinite}
+@-o-keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}
+@-webkit-keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}
+@-moz-keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}
+@keyframes arrow-movement {
+0%   { 
+    opacity: 0;
+    bottom: 45%;
+}
+70% {
+    opacity: 1;
+}
+100% { 
+    opacity: 0;
+}
+}
+
