@@ -139,8 +139,9 @@ main section h2, .preFooter h2{
 #deux div article{width: 600px;padding: 10px;margin: 10px 0;font-size: 20px;}
 #deux div article:first-child{width: 100%;}
 #deux div article:first-child div.quijesuis{grid-gap: 50px;display: grid;grid-template-columns: 1fr 50%;}
-#deux div article:first-child div.quijesuis div.photo-profile{text-align: center;}
+#deux div article:first-child div.quijesuis div.photo-profile{text-align: center;margin: auto;}
 #deux div article:first-child div.quijesuis div.photo-profile figcaption{font-style: italic;}
+#deux div article:first-child div.quijesuis div.photo-profile figure > img{width: 200px;height: auto;}
 #deux div article:first-child div.quijesuis div.texte-presentation{padding: 20px;}
 
 #deux div article span{
