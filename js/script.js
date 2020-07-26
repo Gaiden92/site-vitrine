@@ -36,7 +36,22 @@ $(document ).ready(function() {
     $('a.slideshow_arr').on('click', function() {
       $('html, body').animate({'scrollTop': $('.en-tete').innerHeight() });
     });
-    
+
+    //Animation barres compétences
+    var skillsDiv = jQuery('#skills');
+
+    jQuery(window).on('scroll', function() {
+      var winT = jQuery(window).scrollTop(),
+        winH = jQuery(window).height(),
+        skillsT = skillsDiv.offset().top;
+      if (winT + winH > skillsT) {
+        jQuery('.skillbar').each(function() {
+          jQuery(this).find('.skillbar-bar').animate({
+            width: jQuery(this).attr('data-percent')
+          }, 1000);
+        });
+      }
+    });
 });
 
 

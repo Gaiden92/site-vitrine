@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8615419ec2.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -46,24 +49,14 @@
         <nav class="col-12 sticky" >
             <a href="#header" class="home">Sami <span>F</span>OUCHAL</a>
             <ul id="slide">
-                <li><a href="#une">Portfolio</a></li>
-                <li><a href="#deux">A propos</a></li>
+                <li><a href="#une">A propos</a></li>
+                <li><a href="#deux">Portfolio</a></li>
                 <li><a href="#trois">Contact</a></li>
                 <li><a href="#quatre">Coordonnées</a></li>
             </ul>
         </nav>
 
-        <section id="une">
-            <h2>Portfolio</h2>
-            <span class="ligne"></span>
-            <div>
-                <a href="http://www.sami-fouchal.fr/LePetitCommerce" target="_blank" data-aos="fade-right" data-aos-duration="1000"><img src="img/site-lepetitcommerce.jpg" alt="site front end"></a> 
-                <a href="http://www.sami-fouchal.fr/swap" target="_blank" data-aos="fade-up" data-aos-duration="1000"><img src="img/site-swap.jpg" alt="site back end"></a> 
-                <a href="http://www.sami-fouchal.fr/otageeku" target="_blank" data-aos="fade-left" data-aos-duration="1000"><img src="img/site-otageeku.jpg" alt="site wordpress woocommerce otageeku"></a> 
-            </div>
-        </section>
-
-        <section id="deux" data-aos="fade-up" data-aos-duration="1000">
+        <section id="une" data-aos="fade-up" data-aos-duration="1000">
             <h2>A propos</h2>
             <span class="ligne"></span>
             <div class="formation">
@@ -123,6 +116,65 @@
             <div class="boutonCV col-12"><a href="document/Sami_Fouchal_CV.pdf"><i class="fas fa-download"></i>CV</a></div>
         </section>
 
+        <section id="cinq" data-aos="fade-up" data-aos-duration="1000">
+            <h2>Mes compétences</h2>
+            <span class="ligne"></span>
+            <div id="skills" class="col-8 offset-2">
+                <div class="skillbar clearfix " data-percent="70%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-css3" aria-hidden="true"></i>CSS3</span></div>
+                <div class="skillbar-bar" style="background: #4791d6;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+     
+            <div class="skillbar clearfix " data-percent="80%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-html5" aria-hidden="true"></i>HTML5</span></div>
+                <div class="skillbar-bar" style="background: #d41313;"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+     
+            <div class="skillbar clearfix" data-percent="65%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fab fa-js"></i>Javascript</span></div>
+                <div class="skillbar-bar" style="background: #f5dd07;"></div>
+                <div class="skill-bar-percent">65%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="60%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fab fa-php"></i>PHP</span></div>
+                <div class="skillbar-bar" style="background: #71059c;"></div>
+                <div class="skill-bar-percent">60%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="50%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><img src="img/icone-mysql.png" alt="icone mysql">MYSQL</span></div><i class="icon-mysql"></i>
+                <div class="skillbar-bar" style="background: #f5b607;"></div>
+                <div class="skill-bar-percent">50%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="70%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-wordpress" aria-hidden="true"></i>Wordpress</span></div>
+                <div class="skillbar-bar" style="background: #000000;"></div>
+                <div class="skill-bar-percent">70%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="80%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-camera" aria-hidden="true"></i>Photoshop</span></div>
+                <div class="skillbar-bar" style="background: #03018f;"></div>
+                <div class="skill-bar-percent">80%</div>
+            </div>
+            <div class="skillbar clearfix" data-percent="75%">
+                <div class="skillbar-title" style="background: #7c7a7a7a;"><span><i class="fa fa-line-chart" aria-hidden="true"></i>SEO</span></div>
+                <div class="skillbar-bar" style="background: #0dcc5c;"></div>
+                <div class="skill-bar-percent">75%</div>
+            </div>
+
+        </section>
+
+        <section id="deux">
+            <h2>Portfolio</h2>
+            <span class="ligne"></span>
+            <div>
+                <a href="http://www.sami-fouchal.fr/LePetitCommerce" target="_blank" data-aos="fade-right" data-aos-duration="1000"><img src="img/site-lepetitcommerce.jpg" alt="site front end"></a> 
+                <a href="http://www.sami-fouchal.fr/swap" target="_blank" data-aos="fade-up" data-aos-duration="1000"><img src="img/site-swap.jpg" alt="site back end"></a> 
+                <a href="http://www.sami-fouchal.fr/otageeku" target="_blank" data-aos="fade-left" data-aos-duration="1000"><img src="img/site-otageeku.jpg" alt="site wordpress woocommerce otageeku"></a> 
+            </div>
+        </section>
+
         <section id="trois" data-aos="fade-up" data-aos-duration="1000">
             <h2>Contactez moi</h2>
             <span class="ligne"></span>
@@ -153,23 +205,37 @@
     <footer>
         <div class="preFooter d-flex">
             <div id="quatre">
-                <article>
+                <!--<article>
                     <h2>COORDONNÉES</h2>
                     <span class="ligne"></span>
                     <br>
-                    <i class="fas fa-map-marker-alt"></i><span> Adresse</span><p>9 allée des orangers, 92150 SURESNES, FRANCE</p>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i><span> Adresse</span><p>9 allée des orangers, 92150 SURESNES, FRANCE</p>
                     <br>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.6580975453826!2d2.211364315674613!3d48.86472977928822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e664c976b139a3%3A0xcf41e43c5dfccf!2s9%20All%C3%A9e%20des%20Orangers%2C%2092150%20Suresnes!5e0!3m2!1sfr!2sfr!4v1570894064384!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" class="d-md-block d-none"></iframe><br><br>
-                    <i class="fas fa-phone"></i><span> Télephone</span><p>06-49-71-61-05</p><br>
-                    <i class="fas fa-envelope"></i><span> Email</span><p>samy_fouchal@hotmail.fr</p>
+                    <i class="fa fa-phone" aria-hidden="true"></i><span> Télephone</span><p>06-49-71-61-05</p><br>
+                    <i class="fa fa-envelope-open" aria-hidden="true"></i><span> Email</span><p>samy_fouchal@hotmail.fr</p>
 
                     <span> Réseaux</span>
                     <ul class="reseau d-flex">
-                            <li><a href="https://www.facebook.com/samifouchal?ref=bookmarks"><i class="fab fa-facebook-square"></i> </a></li>
-                            <li><a href="https://www.linkedin.com/in/sami-fouchal-329968185/"><i class="fab fa-linkedin"></i> </a></li>
-                            <li><a href="#"><i class="fab fa-twitter-square"></i> </a></li>
+                            <li><a href="https://www.facebook.com/samifouchal?ref=bookmarks"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/sami-fouchal-329968185/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> </a></li>
                     </ul>
                 </article>
+            -->
+            <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoia25pdmVzIiwiYSI6ImNrZDNhZzFydDFmYWQyc283ZG9sODE4enoifQ.IUHi0Pb3qgn5-SHkuENfig';
+    var map = new mapboxgl.Map({
+    container: 'map',
+    center: [2.214089, 48.864906 ],
+    zoom: 15,
+    style: 'mapbox://styles/mapbox/streets-v11'
+    });
+    var marker = new mapboxgl.Marker()
+    .setLngLat([2.214089, 48.864906 ])
+    .addTo(map);
+</script>
             </div>    
         </div>
 
@@ -183,6 +249,7 @@
 
     <script> AOS.init();</script>
     <script type="text/javascript" src="js/script.js"></script>
+    
     
    
 </body>
