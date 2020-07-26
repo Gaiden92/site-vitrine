@@ -229,10 +229,19 @@ main section h2, .preFooter h2{text-align: center;font-size: 40px;text-transform
 
 
 /****************************PREFOOTER**************************/
-.preFooter {padding: 20px;color: #F9F8F8;background-color: black;display: flex;flex-wrap: wrap;justify-content: space-around;
-    margin-top: 50px;}
+.preFooter {color: #F9F8F8;background-color: black;display: flex;flex-wrap: wrap;justify-content: space-between;
+    margin-top: 50px;position: relative;width: 100%;height: 420px;}
 .preFooter .ligne{background-color:#F9F8F8;width: 50%;}
 .ligne2{display: block;height: 2px;background-color: #F9F8F8;margin: 20px auto;width: 98%;}
+
+#map{position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;}
+#map .mapboxgl-canvas{position: absolute;}
+.mapboxgl-popup-close-button{font-size: 20px;right: 10px;top: 10px;}
+.mapboxgl-popup-content{padding: 10px 10px 10px;color: black;font-size: 12px;line-height: 23px;}
 
 /******************************BLOC RESEAU*********************/
 .reseau{font-size: 1.5em;}

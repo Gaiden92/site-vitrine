@@ -223,19 +223,29 @@
                     </ul>
                 </article>
             -->
-            <div id='map' style='width: 400px; height: 300px;'></div>
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia25pdmVzIiwiYSI6ImNrZDNhZzFydDFmYWQyc283ZG9sODE4enoifQ.IUHi0Pb3qgn5-SHkuENfig';
-    var map = new mapboxgl.Map({
-    container: 'map',
-    center: [2.214089, 48.864906 ],
-    zoom: 15,
-    style: 'mapbox://styles/mapbox/streets-v11'
-    });
-    var marker = new mapboxgl.Marker()
-    .setLngLat([2.214089, 48.864906 ])
-    .addTo(map);
-</script>
+            <div id='map' style='width: 100%; height: 500px;'></div>
+                <script>
+                    mapboxgl.accessToken = 'pk.eyJ1Ijoia25pdmVzIiwiYSI6ImNrZDNhZzFydDFmYWQyc283ZG9sODE4enoifQ.IUHi0Pb3qgn5-SHkuENfig';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        center: [2.214089, 48.864906 ],
+                        zoom: 14,
+                        style: 'mapbox://styles/mapbox/outdoors-v11'
+                    });
+
+                    var popup = new mapboxgl.Popup({ 
+                        closeOnClick: false 
+                    })
+                    .setLngLat([2.214089, 48.864906 ])
+                    .setHTML('<div><span>Adresse</span><p>9 allée des orangers, 92150 SURESNES, FRANCE</p><span>Téléphone</span><p>06 49 71 61 05</p><span>Email</span><p>samy_fouchal@hotmail.fr</p><div>')
+                    .addTo(map);
+                    
+                    var marker = new mapboxgl.Marker({
+                        color: "#cf9a1e",
+                    })
+                    .setLngLat([2.214089, 48.864906 ])
+                    .addTo(map);
+                </script>
             </div>    
         </div>
 
