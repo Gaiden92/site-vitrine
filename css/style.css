@@ -88,7 +88,7 @@ header h2{
 }
 
 /************* MAIN ************/
-
+.colour{color: black!important;}
 
 
 /*********** SECTION 1 **********/
@@ -121,7 +121,7 @@ main section{padding: 90px 0;}
 
 main section h2, .preFooter h2{text-align: center;font-size: 40px;text-transform: uppercase;}
 
-#deux h2, #trois h2{color: rgb(207, 154, 30);}
+h2{color: rgb(207, 154, 30);}
 
 #deux .ligne, #trois .ligne {background-color:  #2c3e50;}
 

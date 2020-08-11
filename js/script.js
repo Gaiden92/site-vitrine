@@ -6,12 +6,26 @@ $(document ).ready(function() {
   
 
   //Menu sticky
-  
+
+
   $(window).scroll(function(){
     var sticky = $('.sticky'),
     scroll = $(window).scrollTop();
       if (scroll >= 907) sticky.addClass('fixed');
         else sticky.removeClass('fixed');
+
+    var color1 = $('.color1');
+    var color2 = $('.color2');
+    var color3 = $('.color3'),
+
+    scroll_color = $(window).scrollTop();
+    if ((scroll_color > 900) & (scroll_color < 3400)){color1.addClass('colour');}
+        else color1.removeClass('colour');
+    if ((scroll_color > 3400) & (scroll_color < 4000)){color2.addClass('colour');}
+      else color2.removeClass('colour');
+    if ((scroll_color > 4000) & (scroll_color < 5000)){color3.addClass('colour');}
+      else color3.removeClass('colour');
+    
     });
 
     //Animation texte 'typing'
