@@ -134,9 +134,9 @@ h2{color: rgb(207, 154, 30);}
 #deux div img:hover{transform: scale(1.1);opacity: 0.8;}
 
 
-/************* SECTION 3 **************/
+/************* SECTION 4 **************/
 
-#trois form{
+#quatre form{
     color: #2c3e50;
     display: flex;
     flex-direction: column;
@@ -144,18 +144,18 @@ h2{color: rgb(207, 154, 30);}
     margin-top: 50px;
 }
 
-#trois form aside{
+#quatre form aside{
     width: 50%;
     margin: auto;
 }
 
-#trois form aside label{
+#quatre form aside label{
     display: block;
     text-align: left;
     font-size: 20px;
 }
 
-#trois form input, #trois form textarea{
+#quatre form input, #quatre form textarea{
     display: block;
     width: 100%;
     margin: 20px auto;
@@ -163,16 +163,16 @@ h2{color: rgb(207, 154, 30);}
     border: 1px dashed #2c3e50;
 }
 
-#trois form input{
+#quatre form input{
     height: 30px;
     
 }
 
-#trois form textarea{
+#quatre form textarea{
     height: 100px;
 }
 
-#trois form button{
+#quatre form button{
     background-color: #2c3e50;
     color: #F9F8F8;
     border: none;
@@ -186,13 +186,14 @@ h2{color: rgb(207, 154, 30);}
     
 }
 
-#trois form button:hover{
+#quatre form button:hover{
     background-color: #128f76;transform: scale(1.2);
 }
 
 /***************************SECTION 5****************************/
 
 #test{height:800px;}
+#skills{margin-top: 50px;}
   .skillbar-title span > i, .skillbar-title span > img{margin: 0 10px 0 0;}
   .skillbar {
       position:relative;
@@ -250,16 +251,16 @@ h2{color: rgb(207, 154, 30);}
 .reseau i:hover{color: #F9F8F8;}
 /****************************BLOC COORDONNEES****************************/
 
-#quatre span{
+#cinq span{
     font-size: 1.5em;
     color: rgb(207, 154, 30);
 }
 
-#quatre i{
+#cinq i{
     font-size: 1.5em;
 }
 
-#quatre p{
+#cinq p{
     font-size: 1.2em;
 }
 
